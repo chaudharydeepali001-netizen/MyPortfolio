@@ -1,0 +1,228 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: white;
+
+    /* ADD YOUR BACKGROUND IMAGE LINK HERE */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/351/220/original/elegant-golden-stage-vertical-glowing-with-lighting-effect-sparkle-on-black-background-template-premium-award-design-vector.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+    min-height: 100vh;
+    padding: 30px 6%;
+    background: rgba(10, 10, 25, 0.35);
+}
+
+/* Top Heading */
+header {
+    text-align: left;
+    padding: 15px;
+}
+
+header h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 15px #c084fc;
+}
+
+/* Main Layout */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Girl Image */
+.girl-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.girl-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 430px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px #c084fc);
+}
+
+/* Right Content */
+.hero-content {
+    width: 55%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.hero-content h1 span {
+    color: #d8a4ff;
+    text-shadow: 0 0 15px #b66cff;
+}
+
+/* Introduction Box */
+.intro-box {
+    padding: 35px;
+    border: 2px solid #c084fc;
+    border-radius: 20px;
+
+    background: rgba(15, 15, 35, 0.75);
+
+    box-shadow: 0 0 15px #a855f7;
+
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.intro-box:hover {
+    transform: translateY(-12px);
+
+    border-color: #ffffff;
+
+    box-shadow:
+        0 0 15px #c084fc,
+        0 0 30px #a855f7,
+        0 0 45px #9333ea;
+}
+
+.intro-box h2 {
+    color: #d8a4ff;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.intro-box p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+}
+
+/* Know More Link */
+.know-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    margin-top: 35px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.know-more i {
+    font-size: 50px;
+    color: #d8a4ff;
+    transition: 0.3s ease;
+}
+
+.know-more:hover {
+    color: #d8a4ff;
+    text-shadow: 0 0 10px #c084fc;
+}
+
+.know-more:hover i {
+    transform: translateX(8px);
+    color: white;
+}
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    position: fixed;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    z-index: 1000;
+}
+
+/* ICON DESIGN */
+.social-icons a {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #E5C8FF !important;
+    background: rgba(155, 89, 220, 0.25) !important;
+
+    border: 2px solid #B66CFF !important;
+    border-radius: 50%;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 0 10px rgba(182, 108, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.social-icons a:hover {
+    background: #9B59DC !important;
+    color: white !important;
+
+    box-shadow: 0 0 22px #B66CFF;
+    transform: scale(1.15);
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .girl-image,
+    .hero-content {
+        width: 100%;
+    }
+
+    .girl-image img {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .intro-box {
+        padding: 25px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+}
